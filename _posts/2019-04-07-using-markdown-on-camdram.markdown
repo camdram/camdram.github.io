@@ -56,7 +56,7 @@ Heading sizes in theory range from 1-6 (with one being the biggest), but since w
 ###### Heading size 6 (tiny)
 ```
 
-### Vertical lines
+### Horizontal lines
 
 Want to split sections of your advert but make it look a bit nicer than just writing `----`?
 
@@ -139,7 +139,7 @@ A couple \*of backslashes\* clear it up nicely.
 
 ### HTML?
 
-If you're wondering if you can use [HTML](https://en,wikipedia.org/wiki/HTML), the answer is not really. Some of our older pages may have a bit of HTML in them, so we convert bold, italic, and a couple of other tags to Markdown, then feed the whole thing through a Markdown parser which has been told not to accept any other HTML. We don't recommend you try to use this in new pages though!
+If you're wondering if you can use [HTML](https://en.wikipedia.org/wiki/HTML), the answer is not really. Some of our older pages may have a bit of HTML in them, so we convert bold, italic, and a couple of other tags to Markdown, then feed the whole thing through a Markdown parser which has been told not to accept any other HTML. We don't recommend you try to use this in new pages though!
 
 ### Pictures
 
