@@ -10,11 +10,11 @@ permalink: /api/markdown
 
 -----
 
-Camdram allows users to enter show descriptions in plain text using Markdown. However, Markdown varies from implementation to implementation, and Camdram has to deal with legacy data, so this is not the whole story.
+Camdram allows users to enter show descriptions as formatted text using Markdown. However, Markdown varies from implementation to implementation, and Camdram has to deal with legacy data, so this is not the whole story.
 
 We use the [Parsedown](https://github.com/erusev/parsedown) library to convert Markdown to HTML, alongside a few other techniques for legacy reasons.
 
-The relevant code (simplified from our [TextService.php](https://github.com/camdram/camdram/blob/master/src/Acts/CamdramBundle/Service/TextService.php)) is:
+The relevant PHP code (simplified from our [TextService.php](https://github.com/camdram/camdram/blob/master/src/Acts/CamdramBundle/Service/TextService.php)) is:
 
 ```php
 $markdown_regexs = array(
@@ -40,11 +40,11 @@ $markdown_regexs = array(
 $this->parsedown = new Parsedown();
 $this->parsedown->setSafeMode(true);
 $this->parsedown->setBreaksEnabled(true);
-if ($strip_tags) {
-    // FYI: using strip_tags like this is NOT a defence against XSS.
-    // We use Parsedown's safe mode to block harmful code.
-    $text = strip_tags($text, $this->allowed_tags);
-}
+
+// FYI: using strip_tags with both arguments is NOT a defence against XSS.
+// We use Parsedown's safe mode to block harmful code.
+$text = strip_tags($text, '<b><i><u><strong><em><p><ul><li><ol><br><green><red><pre><hr>');
+
 $text = preg_replace(array_keys($this->markdown_regexs),
                      array_values($this->markdown_regexs), $text);
 return $this->parsedown->text($text);
