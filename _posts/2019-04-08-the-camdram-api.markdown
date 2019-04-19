@@ -23,6 +23,10 @@ Historically Camdram's API has been undocumented, but this site aims to make the
 
 * [Camdram Markdown](/api/markdown)
 
+## Sample code
+
+* PHP: <https://github.com/camdram/api-demo-php>
+* Python: <https://github.com/camdram/api-demo-python>
 
 ## Available client libraries
 You can access the Camdram API directly, but the following library is available for Ruby:
