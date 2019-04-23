@@ -107,13 +107,9 @@ This is an area where the API is likely to change in the near future. You'll not
 
 A number of URLs appear in `_links` objects. These can be used to navigate the site; just prepend `https://www.camdram.net`. All these links will be current, regardless of how old the show is.
 
-There are four external URLs that can be associated with a show:
-
-- Facebook
-- Twitter
+A booking URL, a Facebook id and a Twitter id can be associated with a show. Currently only the booking URL is available over the API.
 - `online_booking_url` (string): used for ticket sales
-- Other
 
-Be aware that these may become dead links once a show is a few years or even months old; the ticket sales link in particular shouldn't be displayed publicly once a show has ended!
+Be aware that these may become dead links once a show is a few years or even months old; the ticket sales link shouldn't be displayed publicly once a show has ended!
 
 
