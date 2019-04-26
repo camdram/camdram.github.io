@@ -10,8 +10,11 @@ The Performance object refers to either a single performance of a show, or a rep
 
 This example Performance was taken from 2019 Lent Term Musical *Legally Blonde*.
 
+<div class="tabbed-content">
+<span class="title active">JSON</span>
+<div class="content" markdown="1">
+<https://www.camdram.net/shows/2019-legally-blonde.json>
 ```javascript
-// https://www.camdram.net/shows/2019-legally-blonde.json
 {
     // ...
     "performances": [
@@ -46,7 +49,36 @@ This example Performance was taken from 2019 Lent Term Musical *Legally Blonde*.
     // ...
 }
 ```
-
+</div>
+<span class="title">XML</span><div class="content" markdown="1">
+<https://www.camdram.net/shows/2019-legally-blonde.xml>
+```xml
+<performances>
+  <performance id="6849" rel="performance">
+    <date_string>19:45, Wed 13th March 2019 - Sat 16th March 2019</date_string>
+    <start_date>2019-03-13T00:00:00+00:00</start_date>
+    <end_date>2019-03-16T00:00:00+00:00</end_date>
+    <time>1970-01-01T19:45:00+00:00</time>
+    <start_at>2019-03-13T19:45:00+00:00</start_at>
+    <repeat_until>2019-03-16</repeat_until>
+    <link id="show" rel="show" href="/shows/2019-legally-blonde"/>
+    <show rel="show">
+      <id>6626</id>
+      <name>Legally Blonde</name>
+      <slug>2019-legally-blonde</slug>
+    </show>
+    <link id="venue" rel="venue" href="/venues/adc-theatre"/>
+    <venue rel="venue">
+      <id>29</id>
+      <name>ADC Theatre</name>
+      <slug>adc-theatre</slug>
+    </venue>
+  </performance>
+  <!-- ... -->
+</performances>
+```
+</div>
+</div>
 ## Dates
 
 This refers to the first run from Wednesday to Saturday. Dates are provided as an *inclusive* range. A user-friendly string is available (`date_string`), alongside a `start_at` and `repeat_until` field. Some notes:

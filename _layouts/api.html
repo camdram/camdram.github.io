@@ -1,6 +1,49 @@
 ---
 layout: default
 ---
+<style> /* Taken from Camdram's CSS. */
+.tabbed-content {
+  display: flex;
+  flex-flow: row wrap;
+}
+.tabbed-content .title {
+  order: -1;
+  flex: 1;
+  font-size: 0.8em;
+  padding: 1em;
+  border: 1px #fe5c1f;
+  border-style: none none solid none;
+  background: #ddd;
+  color: #111;
+}
+.tabbed-content .title.active {
+  border-style: solid solid none solid;
+  border-radius: 2px 2px 0 0;
+  background: #fff;
+}
+.tabbed-content .title:not(.active) + .content {
+  display: none;
+}
+.tabbed-content .content {
+  width: 100%;
+  max-width: 100%;
+  border: 1px #fe5c1f;
+  border-style: none solid solid solid;
+  padding: 1em;
+  box-sizing: border-box;
+}
+</style>
+<script>
+window.addEventListener('DOMContentLoaded', (event) => {
+  for (var title of document.querySelectorAll(".tabbed-content > .title")) {
+    title.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.target.parentNode.querySelector(".title.active").classList.remove("active");
+      e.target.classList.add("active");
+    });
+  }
+});
+</script>
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">

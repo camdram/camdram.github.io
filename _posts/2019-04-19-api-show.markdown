@@ -10,8 +10,12 @@ Shows are the ultimate purpose of Camdram and so play a central role in most int
 
 Let's take a reasonably complex show, the 2019 Lent Term Musical *Legally Blonde*, and break it down.
 
+
+<div class="tabbed-content">
+<span class="title active">JSON</span>
+<div class="content" markdown="1">
+<https://www.camdram.net/shows/2019-legally-blonde.json>
 ```javascript
-// https://www.camdram.net/shows/2019-legally-blonde.json
 {
     "other_society": "Cambridge University Amateur Dramatic Club",  // Deprecated
     "societies": [                       // This is an array, since it's common for multiple bodies to fund a show
@@ -88,6 +92,79 @@ Let's take a reasonably complex show, the 2019 Lent Term Musical *Legally Blonde
     "_type": "show"
 }
 ```
+</div><span class="title">XML</span>
+<div class="content" markdown="1">
+<https://www.camdram.net/shows/2019-legally-blonde.xml>
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<show id="6626" rel="show">
+  <other_society>Cambridge University Amateur Dramatic Club</other_society>
+  <societies>
+    <entry>
+      <id>1</id>
+      <name><![CDATA[Cambridge University Amateur Dramatic Club]]></name>
+      <slug><![CDATA[cambridge-university-amateur-dramatic-club]]></slug>
+    </entry>
+  </societies>
+  <name>Legally Blonde</name>
+  <description><![CDATA[The international, award-winning musical Legally...
+
+This laugh-out-loud musical will take you from the lavi...]]></description>
+  <image rel="image">
+    <id>1854</id>
+    <filename><![CDATA[5c6cd9bf0ff4f.png]]></filename>
+    <created_at><![CDATA[2019-02-20T04:38:23+00:00]]></created_at>
+    <width>1024</width>
+    <height>576</height>
+    <extension><![CDATA[png]]></extension>
+    <type><![CDATA[image/png]]></type>
+  </image>
+  <slug>2019-legally-blonde</slug>
+  <author>Heather Hach</author>
+  <other_venue>ADC Theatre</other_venue>
+  <category>musical</category>
+  <performances>
+    <performance id="6849" rel="performance">
+      <date_string>19:45, Wed 13th March 2019 - Sat 16th March 2019</date_string>
+      <start_date>2019-03-13T00:00:00+00:00</start_date>
+      <end_date>2019-03-16T00:00:00+00:00</end_date>
+      <time>1970-01-01T19:45:00+00:00</time>
+      <start_at>2019-03-13T19:45:00+00:00</start_at>
+      <repeat_until>2019-03-16</repeat_until>
+      <link id="show" rel="show" href="/shows/2019-legally-blonde"/>
+      <show rel="show">
+        <id>6626</id>
+        <name>Legally Blonde</name>
+        <slug>2019-legally-blonde</slug>
+      </show>
+      <link id="venue" rel="venue" href="/venues/adc-theatre"/>
+      <venue rel="venue">
+        <id>29</id>
+        <name>ADC Theatre</name>
+        <slug>adc-theatre</slug>
+      </venue>
+    </performance>
+    <!-- further performances omitted... -->
+  </performances>
+  <online_booking_url>http://adctheatre.com/omigod</online_booking_url>
+  <link id="venue" rel="venue" href="/venues/adc-theatre"/>
+  <venue rel="venue">
+    <id>29</id>
+    <name>ADC Theatre</name>
+    <slug>adc-theatre</slug>
+  </venue>
+  <link id="roles" rel="role" href="/shows/2019-legally-blonde/roles"/>
+  <link id="society" rel="" href="/societies/cambridge-university-amateur-dramatic-club"/>
+  <society rel="">
+    <id>1</id>
+    <name>Cambridge University Amateur Dramatic Club</name>
+    <slug>cambridge-university-amateur-dramatic-club</slug>
+  </society>
+  <link id="self" rel="show" href="/shows/2019-legally-blonde"/>
+</show>
+```
+</div>
+</div>
 
 Most of these keys are optional: if the administrator of the show doesn't specify a value, the key won't appear.
 
