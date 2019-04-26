@@ -29,8 +29,9 @@ Historically Camdram's API has been undocumented, but this site aims to make the
 * Python: <https://github.com/camdram/api-demo-python>
 
 ## Available client libraries
-You can access the Camdram API directly, but the following library is available for Ruby:
 
-- **Ruby**: https://github.com/CHTJonas/camdram-ruby
+You can access the Camdram API directly, but the following library is available:
+
+- Ruby: <https://github.com/CHTJonas/camdram-ruby>
 
 _If you write a library yourself and would like it to appear here, let us know!_
