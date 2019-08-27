@@ -12,7 +12,7 @@ In short, Camdram offers machine-accessible endpoints, in JSON, XML and iCal for
 
 Historically Camdram's API has been undocumented, but this site aims to make the API documented and well-defined. It is currently a work in progress, but if you spot any issues or find a page unclear you are welcome to [file a bug](https://github.com/camdram/camdram.github.io/issues/new) against the camdram/camdram.github.io repository and we will try to improve it.
 
-## Objects
+## Entities
 
 * [Diary](/api/diary)
 * [Show](/api/show)
@@ -21,6 +21,7 @@ Historically Camdram's API has been undocumented, but this site aims to make the
 
 ## Other information
 
+* [Authentication](/api/authentication)
 * [Camdram Markdown](/api/markdown)
 
 ## Sample code
