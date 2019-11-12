@@ -12,6 +12,8 @@ In short, Camdram offers machine-accessible endpoints, in JSON, XML and iCal for
 
 Historically Camdram's API has been undocumented, but this site aims to make the API documented and well-defined. It is currently a work in progress, but if you spot any issues or find a page unclear you are welcome to [file a bug](https://github.com/camdram/camdram.github.io/issues/new) against the camdram/camdram.github.io repository and we will try to improve it.
 
+Additionally, we have a [mailing list](https://lists.srcf.net/mailman/listinfo/camdram-api-users) which we strongly advise all consumers of our API subscribe to. Currently this requires a Raven account in order to access the Mailman interface, however please contact us if you do not have this and wish to subscribed manually by a member of the Camdram team.
+
 ## Entities
 
 * [Diary](/api/diary)
